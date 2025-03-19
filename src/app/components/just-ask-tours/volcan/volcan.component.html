@@ -1,0 +1,63 @@
+<div class="w-full md:bg-gray-400 md:h-[5rem] md:mb-[2rem] pb-[8rem] md:pb-5">
+</div>
+
+<h2 class="text-center text-4xl text-grey-900 traking-widest font-[700] uppercase">Totumo Volcano</h2>
+
+
+<div class="w-11/12 mx-auto flex flex-wrap space-x-10 my-20">
+    <div class="relative w-full flex md:w-6/12 w-full justify-center overflow-hidden mx-auto">
+        <!-- Image Container -->
+        <div class="flex w-full transition-transform duration-500 ease-in-out"
+             [ngStyle]="{'transform': 'translateX(-' + (currentIndex * 100) + '%)'}">
+          <div *ngFor="let img of images" class="w-full flex-shrink-0 flex justify-center">
+            <img [src]="img" class="w-[85vw] h-[60vh] object-cover rounded-lg shadow-lg">
+          </div>
+        </div>
+      
+        <!-- Previous Button -->
+        <button (click)="prevSlide()" 
+                class="absolute top-1/2 left-4 transform -translate-y-1/2 text-gray-500 p-2 rounded-full">
+          ◀
+        </button>
+      
+        <!-- Next Button -->
+        <button (click)="nextSlide()" 
+                class="absolute top-1/2 right-4 transform -translate-y-1/2 text-gray-500  p-2 rounded-full">
+          ▶
+        </button>
+      
+        <!-- Dots Indicator -->
+        <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+          <span *ngFor="let img of images; let i = index" 
+                (click)="goToSlide(i)"
+                class="w-3 h-3 rounded-full cursor-pointer"
+                [ngClass]="i === currentIndex ? 'bg-white' : 'bg-gray-500'">
+          </span>
+        </div>
+      </div>
+
+      <div class="space-y-6 md:w-5/12 w-full md:mt-0 mt-10">
+        <h1 class="text-4xl font-light">Totumo Volcano, Santa Catalina</h1>
+        <h2 class="mt-10 font-bold text-xl mb-0">INCLUYE:</h2>
+        <ul>
+            <li class="tracking-wide">⛰️Recogida en hoteles de Bocagrande, Castillo, Laguito, Crespo, Zona Norte.</li>
+            <li class="tracking-wide">⛰️Muelle de los pegasos punto de encuentro para personal del centro y Getsemaní. </li>
+            <li class="tracking-wide">⛰️ Coordinador Bilingüe quien le explicara la historia de los lugares más emblemáticos de camino al volcán del totumo.</li>
+            <li class="tracking-wide">⛰️Transporte en bus o vans con aire acondicionado en un trayecto de una hora aproximadamente desde Cartagena.</li>
+            <li class="tracking-wide">⛰️ Ticket para ingresar al Volcán.</li>
+            <li class="tracking-wide">⛰️ Snack típico de la región.</li>
+            <li class="tracking-wide">⛰️ Seguro contra accidente</li>
+        </ul>
+        <p class="text-medium font-bold mb-2">Valor de la Experiencia: $110.000 COP.</p>
+        <p class="text-medium font-bold mb-2">Horario 1: 8:00 am a 12:00 pm</p>
+        <p class="text-medium font-bold">Horario 2: 1:00 pm a 5:00 pm</p>
+      </div>
+
+      
+</div>
+
+<app-footer></app-footer>
+
+
+
+  

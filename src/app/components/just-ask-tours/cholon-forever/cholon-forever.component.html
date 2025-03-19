@@ -1,0 +1,65 @@
+<div class="w-full md:bg-gray-400 md:h-[5rem] md:mb-[2rem] pb-[8rem] md:pb-5">
+</div>
+
+<h2 class="text-center text-4xl text-grey-900 traking-widest font-[700] uppercase">Cholon Forever!</h2>
+
+
+<div class="w-11/12 mx-auto flex flex-wrap space-x-10 my-20">
+    <div class="relative w-full flex md:w-6/12 w-full justify-center overflow-hidden mx-auto">
+        <!-- Image Container -->
+        <div class="flex w-full transition-transform duration-500 ease-in-out"
+             [ngStyle]="{'transform': 'translateX(-' + (currentIndex * 100) + '%)'}">
+          <div *ngFor="let img of images" class="w-full flex-shrink-0 flex justify-center">
+            <img [src]="img" class="w-[85vw] h-[60vh] object-cover rounded-lg shadow-lg">
+          </div>
+        </div>
+      
+        <!-- Previous Button -->
+        <button (click)="prevSlide()" 
+                class="absolute top-1/2 left-4 transform -translate-y-1/2 text-gray-500 p-2 rounded-full">
+          ◀
+        </button>
+      
+        <!-- Next Button -->
+        <button (click)="nextSlide()" 
+                class="absolute top-1/2 right-4 transform -translate-y-1/2 text-gray-500  p-2 rounded-full">
+          ▶
+        </button>
+      
+        <!-- Dots Indicator -->
+        <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+          <span *ngFor="let img of images; let i = index" 
+                (click)="goToSlide(i)"
+                class="w-3 h-3 rounded-full cursor-pointer"
+                [ngClass]="i === currentIndex ? 'bg-white' : 'bg-gray-500'">
+          </span>
+        </div>
+      </div>
+
+      <div class="space-y-6 md:w-5/12 w-full md:mt-0 mt-10">
+        <h1 class="text-4xl font-light">🚤 Cholon Forever 🚤</h1>
+        <p class="text-medium tracking-wide">🍻Enjoy a great party on boats and yachts on the most partying island in the Caribbean🍻.</p>
+        <h2 class="mt-10 font-bold text-xl">The Tour includes:</h2>
+        <ul>
+            <li class="tracking-wide">🏨 Pick up at hotel</li>
+            <li class="tracking-wide">🛥️ Sports boat</li>
+            <li class="tracking-wide">🎼 Full Music Crossover</li>
+            <li class="tracking-wide">🎟️ Dock Tax</li>
+            <li class="tracking-wide">☀️ Panoramic Rosario Islands</li>
+            <li class="tracking-wide">🏝️ Rumba time on Isla Cholon</li>
+            <li class="tracking-wide">🍸 2 Welcome Drinks (Options: Beer, water or soda)</li>
+            <li class="tracking-wide">🍽️ Lunch</li>
+        </ul>
+        <p class="text-medium font-bold">Departure 8:00 am - Return 4:00 pm</p>
+        
+        <p class="text-medium font-bold">Price: $300.000 COP</p>
+      </div>
+
+      
+</div>
+
+<app-footer></app-footer>
+
+
+
+  

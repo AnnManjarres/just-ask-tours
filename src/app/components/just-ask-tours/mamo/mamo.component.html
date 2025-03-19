@@ -1,0 +1,62 @@
+<div class="w-full md:bg-gray-400 md:h-[5rem] md:mb-[2rem] pb-[8rem] md:pb-5">
+</div>
+
+<h2 class="text-center md:my-5 md:text-6xl text-3xl text-grey-800 traking-widest font-[300] uppercase px-5">Mambo</h2>
+
+
+<div class="w-11/12 mx-auto flex flex-wrap space-x-10 my-20">
+    <div class="relative w-full flex md:w-6/12 w-full justify-center overflow-hidden mx-auto">
+        <!-- Image Container -->
+        <div class="flex w-full transition-transform duration-500 ease-in-out"
+             [ngStyle]="{'transform': 'translateX(-' + (currentIndex * 100) + '%)'}">
+          <div *ngFor="let img of images" class="w-full flex-shrink-0 flex justify-center">
+            <img [src]="img" class="w-[85vw] h-[60vh] object-cover rounded-lg shadow-lg">
+          </div>
+        </div>
+      
+        <!-- Previous Button -->
+        <button (click)="prevSlide()" 
+                class="absolute top-1/2 left-4 transform -translate-y-1/2 text-gray-500 p-2 rounded-full">
+          ◀
+        </button>
+      
+        <!-- Next Button -->
+        <button (click)="nextSlide()" 
+                class="absolute top-1/2 right-4 transform -translate-y-1/2 text-gray-500  p-2 rounded-full">
+          ▶
+        </button>
+      
+        <!-- Dots Indicator -->
+        <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+          <span *ngFor="let img of images; let i = index" 
+                (click)="goToSlide(i)"
+                class="w-3 h-3 rounded-full cursor-pointer"
+                [ngClass]="i === currentIndex ? 'bg-white' : 'bg-gray-500'">
+          </span>
+        </div>
+      </div>
+
+      <div class="space-y-5 md:w-5/12 w-full md:mt-0 mt-10 px-4">
+        <h1 class="text-4xl font-light">Mambo Beach FULL</h1>
+
+        <h2 class="mt-3 font-bold text-xl mb-3">El Tour Incluye:</h2>
+        <ul class="font-light list-disc ms-6">
+            <li class="tracking-wide">Recogida en hoteles de Bocagrande, Castillo, Laguito, Crespo, Zona Norte.</li>
+            <li class="tracking-wide">Transporte en un cómodo bus o vans con aire acondicionado 🚍 </li>
+            <li class="tracking-wide">Coordinador Bilingüe 🧍</li>
+            <li class="tracking-wide">Bebida de bienvenida 🍸s</li>
+            <li class="tracking-wide">Deliciosa ensalada de frutas 🍉🍍</li>
+            <li class="tracking-wide">Estadía en el exclusivo Beach Club Mambo con ambiente único en la zona .🏖️</li>
+            <li class="tracking-wide">Bono de $30.000 COP para almuerzo a la carta 🍗🐟🥩🥗</li>
+            <li class="tracking-wide">Seguro contra accidente ⚠️</li>
+        </ul>
+
+        <p class="text-medium font-bold mb-2"><strong>Valor de la Experiencia: </strong>$170.000 COP. </p>
+        <p class="text-medium font-bold mb-2"><strong>Horario de recogida: </strong>6:00 am - 7:00 am. </p>
+        <p class="text-medium font-bold mb-2"><strong>Retorno: </strong>2:00pm a 2:15 pm</p>
+      </div>
+
+      
+</div>
+
+<app-footer></app-footer>

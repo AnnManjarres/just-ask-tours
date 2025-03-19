@@ -1,0 +1,166 @@
+<div id="top-tours" class="my-20">
+    <h2 class="text-center text-4xl text-grey-900 traking-widest font-[700] uppercase">Our Top Tours</h2>
+
+    <!--Tours carousel-->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-12 mx-auto w-[88%] justify-center">
+        <!-- Image Card 1 -->
+        <div class="w-[100%] md:mt-2 mt-10 cursor-pointer" routerLink="/palenque">
+            <div class="relative w-[100%]">
+                <img src="assets/images/IMG_3565.JPG" alt="Tourism Spot" class="w-full h-[15rem] object-cover rounded-lg shadow-lg">
+                <div class="absolute top-4 right-4 rounded bg-black/50 text-white text-xs font-bold px-2 py-1">
+                    ⭐ 4.8
+                </div>
+            </div>
+            <div class="flex justify-between mt-4 mb-2">
+                <h3 class="text-medium font-bold tracking-wide">Palenque</h3>
+                <p class="font-bold">COP 320.000</p>
+            </div>
+            <img class="w-[20px] h-auto opacity-35 inline" src="assets/images/maps-and-location.png" alt="">
+            <span class="opacity-40 ms-1 mt-8 text-sm">Palenque</span>
+        </div>
+
+
+        <div class="w-[100%] md:mt-2 mt-10 cursor-pointer" routerLink="/cinco-islas">  
+            <div class="relative w-[100%]">
+                <img src="assets/images/cholon/IMG_2653.JPG" alt="Tourism Spot" class="w-full h-[15rem] object-cover rounded-lg shadow-lg">
+                <div class="absolute top-4 right-4 rounded bg-black/50 text-white text-xs font-bold px-2 py-1">
+                    ⭐ 4.6
+                </div>
+            </div>
+            <div class="flex justify-between mt-4 mb-2">
+                <h3 class="text-medium font-bold tracking-wide">Cinco Islas</h3>
+                <p class="font-bold">COP 300.000</p>
+            </div>
+            <img class="w-[20px] h-auto opacity-35 inline" src="assets/images/maps-and-location.png" alt="">
+            <span class="opacity-40 ms-1 mt-8 text-sm">Islas del Rosario</span>
+         </div>
+
+         <div  class="w-[100%] md:mt-2 mt-10 cursor-pointer" routerLink="/borabora">  
+            <div class="relative w-[100%]">
+                <img src="assets/images/Bora Bora Vip.jpg" alt="Tourism Spot" class="w-full h-[15rem] object-cover rounded-lg shadow-lg">
+                <div class="absolute top-4 right-4 rounded bg-black/50 text-white text-xs font-bold px-2 py-1">
+                    ⭐ 4.5
+                </div>
+            </div>
+            <div class="flex justify-between mt-4 mb-2">
+                <h3 class="text-medium font-bold tracking-wide">Bora Bora</h3>
+                <p class="font-bold">COP 420.000</p>
+            </div>
+            <img class="w-[20px] h-auto opacity-35 inline" src="assets/images/maps-and-location.png" alt="">
+            <span class="opacity-40 ms-1 mt-8 text-sm">Islas del Rosario</span>
+            
+         </div>
+
+         
+        
+        
+    </div>
+
+    <!--Hidden tours to toggle-->
+    <div *ngIf="toggleTours" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-6 mx-auto w-[88%] justify-center">
+
+        <div class="w-[100%] md:mt-2 mt-10 cursor-pointer" routerLink="/volcan">  
+            <div class="relative w-[100%]">
+                <img src="assets/images/volcan/IMG_4775.JPG" alt="Tourism Spot" class="w-full h-[15rem] object-cover rounded-lg shadow-lg">
+                <div class="absolute top-4 right-4 rounded bg-black/50 text-white text-xs font-bold px-2 py-1">
+                    ⭐ 4.9
+                </div>
+            </div>
+            <div class="flex justify-between mt-4 mb-2">
+                <h3 class="text-medium font-bold tracking-wide">Totumo Volcano</h3>
+                <p class="font-bold">COP 110.000</p>
+            </div>
+            <img class="w-[20px] h-auto opacity-35 inline" src="assets/images/maps-and-location.png" alt="">
+            <span class="opacity-40 ms-1 mt-8 text-sm">Tierra Bomba</span>
+        </div> 
+
+
+        <div class="w-[100%] md:mt-2 mt-10 cursor-pointer" routerLink="/atv">  
+            <div class="relative w-[100%]">
+                <img src="assets/images/atv/IMG_4136.jpg" alt="Tourism Spot" class="w-full h-[15rem] object-cover rounded-lg shadow-lg">
+                <div class="absolute top-4 right-4 rounded bg-black/50 text-white text-xs font-bold px-2 py-1">
+                    ⭐ 4.8
+                </div>
+            </div>
+            <div class="flex justify-between mt-4 mb-2">
+                <h3 class="text-medium font-bold tracking-wide">ATV Experience</h3>
+                <p class="font-bold">Starting at $135 USD</p>
+            </div>
+            <img class="w-[20px] h-auto opacity-35 inline" src="assets/images/maps-and-location.png" alt="">
+            <span class="opacity-40 ms-1 mt-8 text-sm">Cartagena</span>
+        </div>
+
+
+
+        <div class="w-[100%] md:mt-2 mt-10 cursor-pointer" routerLink="/cholon">  
+            <div class="relative w-[100%]">
+                <img src="assets/images/cholon forever 2.jpg" alt="Tourism Spot" class="w-full h-[15rem] object-cover rounded-lg shadow-lg">
+                <div class="absolute top-4 right-4 rounded bg-black/50 text-white text-xs font-bold px-2 py-1">
+                    ⭐ 4.6
+                </div>
+            </div>
+            <div class="flex justify-between mt-4 mb-2">
+                <h3 class="text-medium font-bold tracking-wide">Cholon Forever</h3>
+                <p class="font-bold">COP 300.000</p>
+            </div>
+            <img class="w-[20px] h-auto opacity-35 inline" src="assets/images/maps-and-location.png" alt="">
+            <span class="opacity-40 ms-1 mt-8 text-sm">Islas del Rosario</span>
+         </div>
+        
+        <div class="w-[100%] md:mt-2 cursor-pointer" routerLink="/fenix">  
+            <div class="relative w-[100%]">
+                <img src="assets/images/IMG_2725.JPG" alt="Tourism Spot" class="w-full h-[15rem] object-cover rounded-lg shadow-lg">
+                <div class="absolute top-4 right-4 rounded bg-black/50 text-white text-xs font-bold px-2 py-1">
+                    ⭐ 4.5
+                </div>
+            </div>
+            <div class="flex justify-between mt-4 mb-2">
+                <h3 class="text-medium font-bold tracking-wide">Fenix Beach</h3>
+                <p class="font-bold">COP 290.000</p>
+            </div>
+            <img class="w-[20px] h-auto opacity-35 inline" src="assets/images/maps-and-location.png" alt="">
+            <span class="opacity-40 ms-1 mt-8 text-sm">Tierra Bomba</span>
+         </div> 
+        
+        <div class="w-[100%] md:mt-2 mt-10 cursor-pointer" routerLink="/mamo">  
+            <div class="relative w-[100%]">
+                <img src="assets/images/mamo/Mambo Beach 2.JPG" alt="Tourism Spot" class="w-full h-[15rem] object-cover rounded-lg shadow-lg">
+                <div class="absolute top-4 right-4 rounded bg-black/50 text-white text-xs font-bold px-2 py-1">
+                    ⭐ 4.5
+                </div>
+            </div>
+            <div class="flex justify-between mt-4 mb-2">
+                <h3 class="text-medium font-bold tracking-wide">Mambo Beach</h3>
+                <p class="font-bold">COP 170.000</p>
+            </div>
+            <img class="w-[20px] h-auto opacity-35 inline" src="assets/images/maps-and-location.png" alt="">
+            <span class="opacity-40 ms-1 mt-8 text-sm">Islas del Rosario</span>
+            
+            
+        </div>
+        
+        <!-- Image Card 7 -->
+        <div class="w-[100%] md:mt-2 mt-10 cursor-pointer" routerLink="/mangata">  
+            <div class="relative w-[100%]">
+                <img src="assets/images/IMG_3101.JPG" alt="Tourism Spot" class="w-full h-[15rem] object-cover rounded-lg shadow-lg">
+                <div class="absolute top-4 right-4 rounded bg-black/50 text-white text-xs font-bold px-2 py-1">
+                    ⭐ 4.5
+                </div>
+            </div>
+            <div class="flex justify-between mt-4 mb-2">
+                <h3 class="text-medium font-bold tracking-wide">Mangata</h3>
+                <p class="font-bold">COP 380.000</p>
+            </div>
+            <img class="w-[20px] h-auto opacity-35 inline" src="assets/images/maps-and-location.png" alt="">
+            <span class="opacity-40 ms-1 mt-8 text-sm">Tierra Bomba</span>
+        </div> 
+
+        
+     </div>
+
+
+    <div class="text-center mt-10">
+        <button (click)="toggleAllTours()" class=" border-2 border-cyan-700 rounded-full px-6 py-2 cursor-pointer 
+        hover:shadow-lg transition-shadow"> {{ toggleTours ? 'Hide...' : 'See all...' }}</button>
+    </div>
+</div>

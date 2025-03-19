@@ -1,0 +1,34 @@
+<header class="absolute w-full z-[9999]">
+    <nav class="md:bg-white/20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-10 lg:px-8 md:p-3">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="">
+                        <img class="w-[20rem]" src="assets/images/SVG.png" alt="">
+                    </a>
+                </div> 
+                <div class="hidden md:flex space-x-12 items-center">
+                    <a href="#" class="text-white hover:text-gray-900 tracking-widest text-lg font-light">Home</a>
+                    <a href="#about-us" class="text-white hover:text-gray-900 tracking-widest text-lg font-light">About us</a>
+                    <a href="#top-tours" class="text-white hover:text-gray-900 tracking-widest text-lg font-light">Top Tours</a>
+                    <a href="#just-ask-alex" class="text-white hover:text-gray-900 tracking-widest text-lg font-light">Just Ask Alex</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button (click)="toggleMenu()" class="text-gray-600 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="isMenuOpen" class="md:hidden bg-white px-4 pt-2 pb-4 space-y-2">
+            <a href="#" class="block text-grey hover:text-gray-900">Home</a>
+            <a href="#about-us" class="block text-grey-600 hover:text-gray-900">About us</a>
+            <a href="#top-tours" class="block text-grey-600 hover:text-gray-900">Top Tours</a>
+            <a href="#just-ask-alex" class="block text-grey-600 hover:text-gray-900">Just Ask Alex</a>
+        </div>
+    </nav>
+</header>
+
+
