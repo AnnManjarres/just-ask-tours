@@ -10,10 +10,10 @@ import { FooterComponent } from '../../footer/footer.component';
 })
 export class PalenqueComponent {
   images = [
-    'assets/images/palenque/IMG_4661.JPG',
-    'assets/images/palenque/IMG_4662.JPG',
-    'assets/images/palenque/IMG_4663 (1).JPG',
-    'assets/images/palenque/IMG_4664.JPG',
+    'assets/images/palenque/IMG_3991.JPG',
+    'assets/images/palenque/IMG_2935.JPG',
+    'assets/images/palenque/IMG_3167.JPG',
+    'assets/images/palenque/IMG_4019.JPG',
   ];
 
   currentIndex = 0;

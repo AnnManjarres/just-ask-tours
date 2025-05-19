@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "justasktourscol",
     "public": "dist/browser/browser",
     "ignore": [
       "firebase.json",
