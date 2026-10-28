@@ -11,10 +11,10 @@ import { FooterComponent } from '../../footer/footer.component';
 export class CholonForeverComponent {
 
   images = [
-    'assets/images/cholon/IMG_2876.JPG',
+    'assets/images/cholon/IMG_1278.JPG.jpeg',
     'assets/images/cholon/IMG_9617.JPG',
+    'assets/images/cholon/IMG_1277.JPG.jpeg',
     'assets/images/cholon/452759091_17891462886052356_8214747555860914251_n..jpg',
-    'assets/images/cholon/452872868_17891462904052356_3726858202432339895_n..jpg',
   ];
 
   currentIndex = 0;
